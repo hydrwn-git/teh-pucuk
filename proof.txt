@@ -1,0 +1,103 @@
+
+          ✅   Deployment Successful   ✅
+          -------------------------------
+          📄 Contract Type: XCounter
+          📍 Address: 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🌍 Network: optimism
+          -------------------------------
+
+      
+Updated config.json with address 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7 on network optimism
+
+          ✅   Deployment Successful   ✅
+          -------------------------------
+          📄 Contract Type: XCounter
+          📍 Address: 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🌍 Network: base
+          -------------------------------
+
+      
+Updated config.json with address 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7 on network base
+just create-channel
+echo "Attempting to create a channel with the values from the config..."
+Attempting to create a channel with the values from the config...
+node scripts/create-channel-config.js
+👂 Listening for IBC channel events on optimism...
+👂 Listening for IBC channel events on base...
+
+          -------------------------------------------
+
+          🙋‍♀️   CHANNEL OPEN INIT !!!   🙋‍♀️
+
+          -------------------------------------------
+          🔔 Event name: OpenIbcChannel
+          ⛓️  Network: optimism
+          🔗 Port Address: 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🔗 Counterparty Port ID: polyibc.base-sim.435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🛣️  Counterparty Channel ID: 
+          🦘 Connection Hops: connection-0,connection-5
+          🔀 Ordering: 0
+          💰 Fee Enabled: false
+          #️⃣  Version: 1.0
+          -------------------------------------------
+          🧾 TxHash: 0x7c22c60673cd27ea4869566522808584655d81d3a0271cc305e16491a1a3bdb1
+          🔍 Explorer URL: https://optimism-sepolia.blockscout.com/tx/0x7c22c60673cd27ea4869566522808584655d81d3a0271cc305e16491a1a3bdb1
+          -------------------------------------------
+
+ ⏱️  Waiting for channel open try...
+
+          -------------------------------------------
+
+          🙋‍♂️   CHANNEL OPEN TRY !!!   🙋‍♂️
+
+          -------------------------------------------
+          🔔 Event name: OpenIbcChannel
+          ⛓️  Network: base
+          🔗 Port Address: 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🔗 Counterparty Port ID: polyibc.optimism-sim.435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🛣️  Counterparty Channel ID: channel-13642
+          🦘 Connection Hops: connection-4,connection-1
+          🔀 Ordering: 0
+          💰 Fee Enabled: false
+          #️⃣  Version: 1.0
+          -------------------------------------------
+          🧾 TxHash: 0xc034c2d64c6ea2ca1a82ebefe3373a62afb7725be350e18ff3230072eda2e58d
+          🔍 Explorer URL: https://base-sepolia.blockscout.com/tx/0xc034c2d64c6ea2ca1a82ebefe3373a62afb7725be350e18ff3230072eda2e58d
+          -------------------------------------------
+
+ ⏱️  Waiting for channel open ack...
+
+          🎊   Created Channel   🎊
+          -----------------------------------------
+          🛣️  Channel ID: channel-13642
+          🔗 Port ID: polyibc.optimism-sim.435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🌍 Network: optimism
+          -----------------------------------------
+          🛣️  Counterparty Channel ID: channel-13643
+          🪐 Counterparty Network: base
+          -----------------------------------------
+
+Updated config.json with channel-13642 on network optimism and channel-13643 on network base
+just send-packet optimism false
+Attempting to send a packet over a custom channel as defined in the config...
+👂 Listening for IBC packet events on optimism...
+👂 Listening for IBC packet events on base...
+Fetching IBC app on optimism at address: 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+ 
+          -------------------------------------------
+          📦 📮   PACKET HAS BEEN SENT !!!   📦 📮
+          -------------------------------------------
+          🔔 Event name: SendPacket
+          ⛓️  Network: optimism
+          🔗 Source Port Address: 0x435864D6ae5A5E1B67E26B87cD39bd86A12416a7
+          🛣️  Source Channel ID: channel-13642
+          📈 Sequence: 1
+          ⏳ Timeout Timestamp: 1710211648000000000
+          -------------------------------------------
+          🧾 TxHash: 0x21bcd646812ca5b980231e01efe11c0fc733e75f13e48c3ff79fa502d55dc989
+          🔍 Explorer URL: https://optimism-sepolia.blockscout.com/tx/0x21bcd646812ca5b980231e01efe11c0fc733e75f13e48c3ff79fa502d55dc989
+          -------------------------------------------
+
+ ⏱️  Waiting for packet receipt...
+echo "You've done it!"
+You've done it!
